@@ -6,7 +6,7 @@ const port = 3001;
 // app.js
 const { MongoClient } = require('mongodb');
 
-const url = 'mongodb://localhost:27017'; // Replace with your MongoDB connection URL
+const url = 'mongodb://root:example@mongo:27017'; // Replace with your MongoDB connection URL
 const dbName = 'test'; // Replace with your database name
 app.use(cors());
 async function getListUser ()   {

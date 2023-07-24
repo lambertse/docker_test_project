@@ -13,9 +13,11 @@ services:
     build:
       context: './back-end'
     container_name: back-end
+    ports:
+      - 3001:3001
   mongo:
     image: mongo
-    container_name: my_mongo_db
+    container_name: mongo
     restart: always
     ports:
       - 27017:27017
